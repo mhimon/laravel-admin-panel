@@ -34,7 +34,7 @@
                     </x-slot>
 
                     <x-slot name="content">
-                        <x-dropdown-link :href="Auth::guard('admin')->check() ? '#' : route('profile.edit') ">
+                        <x-dropdown-link :href="route(Auth::guard('admin')->check() ? 'admin.profile.edit' : 'profile.edit')">
                             {{ __('Profile') }}
                         </x-dropdown-link>
 
