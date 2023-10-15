@@ -33,6 +33,8 @@ class Admin extends Authenticatable
         'remember_token',
     ];
 
+    protected $guard = 'admin';
+
     /**
      * The attributes that should be cast.
      *
